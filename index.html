@@ -12,7 +12,7 @@
         }
 
         .menu {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
             background: rgba(0, 0, 0, 0.4);
             padding: 30px;
@@ -24,20 +24,44 @@
             text-align: center;
             font-size: 3em;
             margin-bottom: 10px;
-            letter-spacing: 2px;
         }
 
         .subtitle {
             text-align: center;
-            font-style: italic;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             color: #aeefff;
+        }
+
+        /* IMAGE SLOTS */
+        .image-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .image-slot {
+            flex: 1;
+            height: 200px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px dashed #aeefff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aeefff;
+            font-size: 1.1em;
+        }
+
+        .image-slot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         h2 {
             border-bottom: 2px solid #aeefff;
             padding-bottom: 5px;
-            margin-top: 30px;
+            margin-top: 25px;
             color: #aeefff;
         }
 
@@ -51,59 +75,49 @@
             font-size: 1.1em;
         }
 
-        .drink-name {
-            font-weight: bold;
-        }
-
         footer {
             text-align: center;
             margin-top: 30px;
-            font-size: 0.9em;
             color: #cccccc;
         }
     </style>
 </head>
 <body>
 
-    <div class="menu">
-        <h1>✨ COOL DRINK MENU ✨</h1>
-        <div class="subtitle">Sip • Chill • Repeat</div>
+<div class="menu">
+    <h1>✨ COOL DRINK MENU ✨</h1>
+    <div class="subtitle">Sip • Chill • Repeat</div>
 
-        <h2>🧊 Icy Refreshers</h2>
-        <ul>
-            <li><span class="drink-name">Arctic Lemonade</span> – Lemon, mint & crushed ice</li>
-            <li><span class="drink-name">Blue Breeze</span> – Blue raspberry & lemonade</li>
-            <li><span class="drink-name">Cucumber Chill</span> – Cucumber, lime & soda</li>
-            <li><span class="drink-name">Sunset Splash</span> – Orange & cranberry</li>
-        </ul>
-
-        <h2>🍓 Fruity Faves</h2>
-        <ul>
-            <li><span class="drink-name">Berry Blast</span> – Mixed berry juice</li>
-            <li><span class="drink-name">Mango Magic</span> – Mango & citrus</li>
-            <li><span class="drink-name">Watermelon Wave</span> – Watermelon & lime</li>
-            <li><span class="drink-name">Peach Pop</span> – Peach soda</li>
-        </ul>
-
-        <h2>🥤 Creamy Shakes</h2>
-        <ul>
-            <li><span class="drink-name">Chocolate Cloud</span></li>
-            <li><span class="drink-name">Vanilla Dream</span></li>
-            <li><span class="drink-name">Strawberry Swirl</span></li>
-            <li><span class="drink-name">Cookies & Cream Crush</span></li>
-        </ul>
-
-        <h2>⚡ Fun Fizz</h2>
-        <ul>
-            <li><span class="drink-name">Rainbow Fizz</span></li>
-            <li><span class="drink-name">Cherry Boom</span></li>
-            <li><span class="drink-name">Lime Zing</span></li>
-        </ul>
-
-        <footer>
-            ❄️ Stay Cool & Enjoy ❄️
-        </footer>
+    <!-- IMAGE SECTION: 1 LINE / 2 SLOTS -->
+    <div class="image-row">
+        <div class="image-slot">
+            <!-- Replace src with your image -->
+            <img src="image1.jpg" alt="Drink Image 1">
+        </div>
+        <div class="image-slot">
+            <!-- Replace src with your image -->
+            <img src="image2.jpg" alt="Drink Image 2">
+        </div>
     </div>
+
+    <h2>🧊 Icy Refreshers</h2>
+    <ul>
+        <li>Arctic Lemonade – Lemon & mint</li>
+        <li>Blue Breeze – Blue raspberry lemonade</li>
+        <li>Cucumber Chill – Cucumber & lime</li>
+    </ul>
+
+    <h2>🍓 Fruity Faves</h2>
+    <ul>
+        <li>Mango Magic</li>
+        <li>Berry Blast</li>
+        <li>Watermelon Wave</li>
+    </ul>
+
+    <footer>
+        ❄️ Stay Cool & Enjoy ❄️
+    </footer>
+</div>
 
 </body>
 </html>
